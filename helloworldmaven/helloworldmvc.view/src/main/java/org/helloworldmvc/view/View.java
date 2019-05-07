@@ -1,10 +1,12 @@
 package org.helloworldmvc.view;
 
-public class View {
+import org.helloworldmvc.Contract.IView;
+
+public class View implements IView{
 	
 	public void displayMessage(String message) {
 		
-		System.out.println();
+		System.out.println(message);
 	}
 
 }
